@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Frontend Mentor - QR code component solution</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="frontend-mentor---qr-code-component-solution">Frontend Mentor - QR code component solution</h1>
+<p>This is a solution to the <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H">QR code component challenge on Frontend Mentor</a>. Frontend Mentor challenges help you improve your coding skills by building realistic projects.</p>
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#frontend-mentor---qr-code-component-solution">Frontend Mentor - QR code component solution</a>
+<ul>
+<li><a href="#table-of-contents">Table of contents</a></li>
+<li><a href="#overview">Overview</a>
+<ul>
+<li><a href="#screenshot">Screenshot</a></li>
+<li><a href="#links">Links</a></li>
+</ul>
+</li>
+<li><a href="#my-process">My process</a>
+<ul>
+<li><a href="#built-with">Built with</a></li>
+<li><a href="#what-i-learned">What I learned</a></li>
+<li><a href="#continued-development">Continued development</a></li>
+<li><a href="#useful-resources">Useful resources</a></li>
+</ul>
+</li>
+<li><a href="#author">Author</a></li>
+<li><a href="#acknowledgments">Acknowledgments</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="overview">Overview</h2>
+<h3 id="screenshot">Screenshot</h3>
+<p><img src="file:///c:\Users\pc\Desktop\qr-code-component\preview.png" alt=""></p>
+<h3 id="links">Links</h3>
+<ul>
+<li>Solution URL: <a href="https://your-solution-url.com">Add solution URL here</a></li>
+<li>Live Site URL: <a href="https://your-live-site-url.com">Add live site URL here</a></li>
+</ul>
+<h2 id="my-process">My process</h2>
+<h3 id="built-with">Built with</h3>
+<ul>
+<li>Semantic HTML5 markup</li>
+<li>CSS custom properties</li>
+<li>Flexbox</li>
+<li>CSS Grid</li>
+<li>Mobile-first workflow</li>
+<li><a href="https://reactjs.org/">React</a> - JS library</li>
+<li><a href="https://nextjs.org/">Next.js</a> - React framework</li>
+<li><a href="https://styled-components.com/">Styled Components</a> - For styles</li>
+</ul>
+<p><strong>Note: These are just examples. Delete this note and replace the list above with your own choices</strong></p>
+<h3 id="what-i-learned">What I learned</h3>
+<p>Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.</p>
+<p>To see how you can add code snippets, see below:</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Some HTML code I&#x27;m proud of<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+<pre><code class="language-css"><span class="hljs-selector-class">.proud-of-this-css</span> {
+  <span class="hljs-attribute">color</span>: papayawhip;
+}
+</code></pre>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> <span class="hljs-title function_">proudOfThisFunc</span> = (<span class="hljs-params"></span>) =&gt; {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;🎉&#x27;</span>)
+}
+</code></pre>
+<p>If you want more help with writing markdown, we'd recommend checking out <a href="https://www.markdownguide.org/">The Markdown Guide</a> to learn more.</p>
+<p><strong>Note: Delete this note and the content within this section and replace with your own learnings.</strong></p>
+<h3 id="continued-development">Continued development</h3>
+<p>Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.</p>
+<p><strong>Note: Delete this note and the content within this section and replace with your own plans for continued development.</strong></p>
+<h3 id="useful-resources">Useful resources</h3>
+<ul>
+<li><a href="https://www.example.com">Example resource 1</a> - This helped me for XYZ reason. I really liked this pattern and will use it going forward.</li>
+<li><a href="https://www.example.com">Example resource 2</a> - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.</li>
+</ul>
+<p><strong>Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.</strong></p>
+<h2 id="author">Author</h2>
+<ul>
+<li>Website - <a href="https://www.your-site.com">Add your name here</a></li>
+<li>Frontend Mentor - <a href="https://www.frontendmentor.io/profile/yourusername">@yourusername</a></li>
+<li>Twitter - <a href="https://www.twitter.com/yourusername">@yourusername</a></li>
+</ul>
+<p><strong>Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.</strong></p>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.</p>
+<p><strong>Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.</strong></p>
+
+            
+            
+        </body>
+        </html>
